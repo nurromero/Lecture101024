@@ -8,7 +8,6 @@ struct Node {
 
 
 // Creating a temporary pointer, called tmpHead, to point to the head of the linked list
-
 void initNode(Node *tmpHead, int n) {
 	tmpHead->data = n;
 	tmpHead->next = NULL;
@@ -34,7 +33,6 @@ void displayList(Node *cur) {
 }
 
 // Double pointer
-
 void addFront(Node** tmpHead, int n) {
 	Node *newNode = new Node;
 	newNode->data = n;
@@ -57,14 +55,3 @@ int main()
 }
 
 
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
