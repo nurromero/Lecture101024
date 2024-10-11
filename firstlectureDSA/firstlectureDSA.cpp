@@ -1,5 +1,3 @@
-// firstlectureDSA.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 
 #include <iostream>
 
@@ -40,7 +38,8 @@ void displayList(Node *cur) {
 void addFront(Node** tmpHead, int n) {
 	Node *newNode = new Node;
 	newNode->data = n;
-	newNode->next = tempHead;
+	newNode->next = *tmpHead;
+	*tmpHead = newNode;
 
 }
 
@@ -51,7 +50,7 @@ int main()
 	addNode(head, 33);
 	addNode(head, 44);
 	displayList(head);
-	addFront(&head, n);
+	addFront(&head, 11);
 	displayList(head);
 
 	return 0;
